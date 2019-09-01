@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_celcius"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_celcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celcius  "
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginRight="16dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/input_celcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_konversi"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konversi"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/linear_celcius"
+        />
+
+    <LinearLayout
+
+        android:id="@+id/linear_kelvin"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_konversi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelvin  "
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginRight="16dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/input_kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear_kelvin"
+        android:id="@+id/linear_farenheit"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_farenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farenheit  "
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginRight="16dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/input_farenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear_farenheit"
+        android:id="@+id/linear_reamur"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_reamur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reamur  "
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginRight="16dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/input_reamur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
